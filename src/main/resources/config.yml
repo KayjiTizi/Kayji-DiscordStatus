@@ -1,0 +1,38 @@
+embed:
+  title: "Trang thai may chu"
+  footer: "Cap nhat luc {time}"
+  online:
+    description: "Trang thai: ONLINE"
+    color: "#00ff75"
+  offline:
+    description: "Trang thai: OFFLINE"
+    color: "#ff5555"
+  fields:
+    - name: "Thong tin"
+      value: "Tin nhan va trang thai co the tuy chinh o file nay. Placeholders: {status}, {status_lower}, {server}, {time}"
+      inline: false
+    - name: "Dia chi"
+      value: "Java: Aefamily.fun  •  Bedrock: 19132"
+      inline: false
+retry:
+  attempts: 3
+  backoffSeconds: 5
+bots:
+  - token: "BOT_TOKEN_1"
+    presence:
+      status: "ONLINE"
+      activityType: "PLAYING"
+      activityText: "May chu {status_lower}"
+    channels:
+      - channelId: "1383431339369435136"
+        messageId: 0
+      - channelId: "1383431339369435137"
+        messageId: 0
+  - token: "BOT_TOKEN_2"
+    presence:
+      status: "IDLE"
+      activityType: "WATCHING"
+      activityText: "Trang thai: {status}"
+    channels:
+      - channelId: "1383431339369435138"
+        messageId: 0

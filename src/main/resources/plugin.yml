@@ -1,0 +1,5 @@
+name: Kayji-DiscordStatus
+main: com.aefamily.discordstatus.DiscordStatusPlugin
+author: Kayji_Tizi
+version: 2.2.0
+api-version: 1.16.5
